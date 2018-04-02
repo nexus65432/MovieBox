@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieBox</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_filter">Filter</string>
+    <string name="info_fetching_more_cards_message">Fetching cards...\n Please wait ! ! !</string>
+    <string name="info_nocards_message">No Cards Available.\n Pull down to load more cards </string>
+    <string name="info_no_network_message">Cards can\'t be reach now\n Check your network connection and try again</string>
+    <string name="info_network_unavailable">Check your network connection and try again</string>
+    <string name="info_sorting_movies_list_message">Sorting List...\n Please wait ! ! !</string>
+    <string name="info_sorting_movies_list_error">No Movies to sort !!!</string>
+
+</resources>

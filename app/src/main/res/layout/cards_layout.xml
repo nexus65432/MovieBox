@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lySwipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/refresh_view"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color_grey"
+                android:text="@string/action_refresh"
+                android:textColor="@color/color_black" />
+
+            <Button
+                android:id="@+id/filter_view"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color_grey"
+                android:text="@string/action_filter"
+                android:textColor="@color/color_black" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            style="@style/TubiTvCardListView"
+            android:layout_below="@+id/header" />
+
+        <TextView
+            android:id="@+id/default_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_header"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
